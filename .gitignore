@@ -1,12 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Dependencies
-.npmrc
 node_modules
 .pnp
 .pnp.js
 
 # Local env files
+.npmrc
 .env
 .env.local
 .env.development.local
