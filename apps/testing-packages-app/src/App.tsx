@@ -7,7 +7,7 @@ function App() {
 
 
       {/* <SharedNavbar />
-      <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
+      <div className="flex flex-wrap w-full gap-4 md:flex-nowrap">
         <Input type="email" label="Email" />
         <Input type="email" label="Email" placeholder="Enter your email" />
       </div> */}
