@@ -24,14 +24,14 @@ export default function SharedNavbar() {
                         className='sm:hidden' />
                 </NavbarContent>
                 <NavbarBrand>
-                    <Image src='/public/images/logo.png' className='grayscale w-12' />
+                    <Image src='/public/images/logo.png' className='w-12 grayscale' />
                 </NavbarBrand>
 
                 <NavbarContent className="hidden gap-4 sm:flex" justify="center">
                     {
                         navItems.map((item: { label: string, link: string }, index: number) => (
                             <NavbarItem key={index}>
-                                <Link size='lg' href={item.link} onClick={() => { scrollToTop() }} color="foreground" className="font-semibold text-red-500 hover:text-blue-500  ">{item.label}</Link>
+                                <Link size='lg' href={item.link} onClick={() => { scrollToTop() }} color="foreground" className="font-semibold text-red-500 hover:text-blue-500 ">{item.label}</Link>
                             </NavbarItem>
                         ))
                     }
@@ -41,7 +41,7 @@ export default function SharedNavbar() {
                 <NavbarMenu>
                     {navItems.map((item, index) => (
                         <NavbarMenuItem key={`${index}`}>
-                            <Link color="foreground" href={item.link} onClick={() => { setIsMenuOpen() }}>{item.label}</Link>
+                            <Link color="foreground" href={item.link} className='text-black' onClick={() => { setIsMenuOpen() }}>{item.label}</Link>
                         </NavbarMenuItem>
                     ))}
                 </NavbarMenu>
