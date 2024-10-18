@@ -7,6 +7,7 @@ import dts from "rollup-plugin-dts";
 import external from 'rollup-plugin-peer-deps-external';
 import copy from 'rollup-plugin-copy';
 import { nextui } from "@nextui-org/react";
+import { motion } from "framer-motion"
 
 
 
@@ -49,7 +50,7 @@ export default [
       nextui() // Add any necessary NextUI configurations here
 
     ],
-    external: ['react', 'react-dom', '@headlessui/react', '@heroicons/react',    '@nextui-org/react'],
+    external: ['react', 'react-dom','@nextui-org/react', 'framer-motion'],
   },
   {
     input: "dist/esm/types/index.d.ts",
